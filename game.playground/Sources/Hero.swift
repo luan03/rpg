@@ -1,18 +1,3 @@
-// Game intro
-func Intro(name: String) -> String {
-    let text = """
-        Bucarin Empire was desolated by people who follow Sukumaran a Tyrant who lives in Yorin
-        over 2000 miles in the north of this continent, also known as King Snake. If you decide 
-        to accept this quest, you can liberty our people from slavery and suffering caused by Sukumaran. 
-        Also, you will be very well paid with the map of the treasure of Yotan that I can explain later.
-
-        \(name) we need your help!
-    \n
-    """
-    
-    return text
-}
-
 public struct Warrior {
     var name = "Meena"
     var type = "Warrior"
@@ -86,38 +71,19 @@ public class Hero {
         }
     }
     
-    func getName() -> Any {
-        return self.hero
+    func getName() -> String {
+        let teste = "return my test"
+        
+        return teste
     }
     
-    func getClass() -> Any {}
+    //func getClass() -> void {}
     
-    func getDescription() -> Any {}
+    //func getDescription() -> void {}
     
-    func setAttributes() -> Any {}
+    //func setAttributes() -> void {}
     
-    func getSpells() -> Any {}
+    //func getSpells() -> void {}
 }
 
 //hero.getName()
-
-// Main class that initialize the game
-class Main {
-    let name: String
-    
-    init(name: String) {
-        self.name = name
-
-        print("Empire of Bucarin \n")
-        
-        // Game introduction
-        let intro = Intro(name: self.name)
-        print(intro)
-    }
-}
-
-// Start the game
-let main = Main(name: "Luan")
-
-let hero = Hero(character: "wizard")
-print(hero.getName())
