@@ -16,38 +16,30 @@ func Intro(name: String) -> String {
 // Main class that initialize the game
 class Main {
     let name: String
+    
     init(name: String) {
         self.name = name
-        
+
         print("Empire of Bucarin \n")
         
+        // Game introduction
         let intro = Intro(name: self.name)
         print(intro)
     }
 }
 
-// List of heroes
-let heroes = [
-    "Warrior":     "",
-    "Wizard": "",
-    "Archer":   "",
-    "Bard": ""
-]
-
 class Hero {
+    let hero: String
     
-    let attributes = [
-      "Speed": "9",
-      "Coordination": "7",
-      "Power": "8",
-      "IQ": "9",
-      "Luck": "7",
-      "Lore": "6"
-    ]
-    
-    let spells = ["Fireball", "The Aura Cleansing Spell", "New Moon"]
-    
-    //let description = "Super \(name)"
+    init(hero: String) {
+        self.hero = hero
+        
+        print(heroes[self.hero])
+    }
 }
 
+// Start the game
 let main = Main(name: "Luan")
+
+// Select a hero to go with you in this new journey
+let hero = Hero(hero: "bard")
